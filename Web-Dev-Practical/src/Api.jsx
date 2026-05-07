@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function App() {
+function Api() {
 
   const [users, setUsers] = useState([]);
 
@@ -15,17 +15,13 @@ function App() {
   return (
     <div>
 
-      <h1>User Data</h1>
+      <h2>User Data</h2>
 
       {users.map((user) => (
         <div key={user.id}>
-
           <p>Username: {user.username}</p>
-
           <p>Email: {user.email}</p>
-
           <hr />
-
         </div>
       ))}
 
@@ -33,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default Api;

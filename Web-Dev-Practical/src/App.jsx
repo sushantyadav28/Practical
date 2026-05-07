@@ -1,5 +1,6 @@
 import React from "react";
 import Child from "./Child.jsx";
+import Api from "./Api.jsx";
 
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
       <h1>Parent Component</h1>
 
       <Child name={name} age={age} />
+
+      <h1>Fetch Api</h1>
+      <Api />
     </div>
   );
 }
